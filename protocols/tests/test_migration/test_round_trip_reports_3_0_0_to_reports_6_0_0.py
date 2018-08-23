@@ -38,11 +38,16 @@ class TestRoundTripMigrateReports300To600(TestCaseMigration):
         cr_rd_5 = MigrateReports600To500().migrate_clinical_report_rd(old_instance=cr_rd_6)
         self.assertIsInstance(cr_rd_5, reports_5_0_0.ClinicalReportRD)
         self.assertTrue(cr_rd_5.validate(cr_rd_5.toJsonDict()))
+        cr_rd_4 = MigrateReports500To400().migrate_clinical_report_rd(old_instance=cr_rd_5)
+        self.assertIsInstance(cr_rd_4, reports_4_0_0.ClinicalReportRD)
+        self.assertTrue(cr_rd_4.validate(cr_rd_4.toJsonDict()))
+        cr_rd_3 = MigrateReports400To300().migrate_clinical_report_rd(old_instance=cr_rd_4)
+        self.assertIsInstance(cr_rd_3, reports_3_0_0.ClinicalReportRD)
+        self.assertTrue(cr_rd_3.validate(cr_rd_3.toJsonDict()))
 
+        round_trip_json = cr_rd_3.toJsonDict()
 
-
-
-
+        self.assertDictEqual(original_json, round_trip_json)
 
     # def test_migrate_interpretation_request_rd(self):
     #     self._check_rd(fill_nullables=True)
