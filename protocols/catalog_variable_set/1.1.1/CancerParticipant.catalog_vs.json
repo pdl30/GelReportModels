@@ -303,45 +303,45 @@
     "description": "Product of the sample"
    }, 
    {
-    "multiValue": false, 
-    "required": false, 
-    "type": "TEXT", 
-    "name": "morphologyICD", 
+    "multiValue": true,
+    "required": false,
+    "type": "TEXT",
+    "name": "morphologyICDs",
     "description": "Tumour morphology as defined by ICD (at least one morphology definition by either ICD, Snomed CT or Snomed RT must be provided)"
-   }, 
+   },
    {
-    "multiValue": false, 
-    "required": false, 
-    "type": "TEXT", 
-    "name": "morphologySnomedCT", 
+    "multiValue": true,
+    "required": false,
+    "type": "TEXT",
+    "name": "morphologySnomedCTs",
     "description": "Tumour morphology as defined by Snomed CT (at least one morphology definition by either ICD, Snomed CT or Snomed RT must be provided)"
-   }, 
+   },
    {
-    "multiValue": false, 
-    "required": false, 
-    "type": "TEXT", 
-    "name": "morphologySnomedRT", 
+    "multiValue": true,
+    "required": false,
+    "type": "TEXT",
+    "name": "morphologySnomedRTs",
     "description": "Tumour morphology as defined by Snomed RT (at least one morphology definition by either ICD, Snomed CT or Snomed RT must be provided)"
-   }, 
+   },
    {
-    "multiValue": false, 
-    "required": false, 
-    "type": "TEXT", 
-    "name": "topographyICD", 
+    "multiValue": true,
+    "required": false,
+    "type": "TEXT",
+    "name": "topographyICDs",
     "description": "Tumour topography as defined by ICD (at least one topography definition by either ICD, Snomed CT or Snomed RT must be provided)"
-   }, 
+   },
    {
-    "multiValue": false, 
-    "required": false, 
-    "type": "TEXT", 
-    "name": "topographySnomedCT", 
+    "multiValue": true,
+    "required": false,
+    "type": "TEXT",
+    "name": "topographySnomedCTs",
     "description": "Tumour topography as defined by Snomed CT (at least one topography definition by either ICD, Snomed CT or Snomed RT must be provided)"
-   }, 
+   },
    {
-    "multiValue": false, 
-    "required": false, 
-    "type": "TEXT", 
-    "name": "topographySnomedRT", 
+    "multiValue": true,
+    "required": false,
+    "type": "TEXT",
+    "name": "topographySnomedRTs",
     "description": "Tumour topography as defined by Snomed RT (at least one topography definition by either ICD, Snomed CT or Snomed RT must be provided)"
    }
   ], 
